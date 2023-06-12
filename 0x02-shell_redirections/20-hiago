@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "$@" | tr 'cC' ' '
+tr 'cC' ' ' "$@"
