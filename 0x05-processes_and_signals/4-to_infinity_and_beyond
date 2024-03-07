@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Loop indefinitely, displaying a message with a pause
 
 while true; do

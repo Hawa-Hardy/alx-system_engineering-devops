@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Display a list of currently running processes in a user-friendly format with hierarchy
 
 # Use the ps command with the following options:
