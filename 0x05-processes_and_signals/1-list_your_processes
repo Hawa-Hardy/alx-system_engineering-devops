@@ -1,0 +1,10 @@
+#!/bin/bash
+# Display a list of currently running processes in a user-friendly format with hierarchy
+
+# Use the ps command with the following options:
+# a: Show processes for all users
+# u: Display the process's user/owner
+# x: Include processes without a controlling terminal (TTY)
+# --forest: Show process hierarchy
+ps aux --forest
+
