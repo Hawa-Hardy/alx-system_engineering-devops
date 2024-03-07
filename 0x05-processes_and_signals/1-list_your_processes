@@ -7,4 +7,3 @@
 # x: Include processes without a controlling terminal (TTY)
 # --forest: Show process hierarchy
 ps aux --forest
-

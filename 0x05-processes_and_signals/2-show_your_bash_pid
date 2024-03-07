@@ -2,4 +2,3 @@
 # Display lines containing the word 'bash' from the list of processes
 # shellcheck disable=SC2009
 ps aux | grep "[b]ash"
-
