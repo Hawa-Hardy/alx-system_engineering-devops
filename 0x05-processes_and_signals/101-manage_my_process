@@ -8,13 +8,11 @@ PROCESS_SCRIPT="/path/to/manage_my_process"
 
 case "$1" in
     start)
-        # Start manage_my_process
         bash $PROCESS_SCRIPT &
         echo $! > $PID_FILE
         echo "manage_my_process started"
         ;;
     stop)
-        # Stop manage_my_process
         if [ -f $PID_FILE ]; then
             kill $(cat $PID_FILE)
             rm -f $PID_FILE
@@ -24,7 +22,6 @@ case "$1" in
         fi
         ;;
     restart)
-        # Restart manage_my_process
         if [ -f $PID_FILE ]; then
             kill $(cat $PID_FILE)
             rm -f $PID_FILE
@@ -34,7 +31,6 @@ case "$1" in
         echo "manage_my_process restarted"
         ;;
     *)
-        # Invalid or no argument passed
         echo "Usage: $0 {start|stop|restart}"
         ;;
 esac
